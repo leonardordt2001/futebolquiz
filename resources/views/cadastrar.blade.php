@@ -9,7 +9,7 @@
      
       body {
         background: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         background-image: url('/img64789faa231705.85386216.jpg');
         background-size: cover;
       background-repeat: no-repeat;
@@ -17,18 +17,18 @@
         margin: 0; /* Adicionei essa linha para remover a margem padrão do corpo */
       }
       /*contêiner do formulário */
-      .container2 {
+      .container3 {
         width: 30%;
         height: 50%;
-        background-color: black;
-        position: relative;
+        background-color:black;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 20px; /* Reduzi o padding para que o formulário não fique muito espaçoso */
         border-radius: 15px;
         color: white;
-        margin-top: 15%;
+        margin-top: 10%;
       }
       h1 {
         text-align: center; /* Centraliza o título */
@@ -45,21 +45,27 @@
     </style>
   </head>
   <body>
-    <div class="container2">
-      <h1>ENTRAR</h1>
-      <!-- Painel Email tela login -->
+    <div class="container3">
+      <h1>CADASTRAR-SE</h1>
+      <!-- Painel Usuario tela cadastro -->
+      <div class="form-group">
+        <label for="inputuser">USUÁRIO:</label>
+        <input type="text" class="form-control" id="inputuser" value="Cr7"> 
+      </div>
+      <!-- Painel Email tela cadastro -->
       <div class="form-group">
         <label for="inputEmail">EMAIL:</label>
         <input type="text" class="form-control" id="inputEmail" value="email@example.com">
       </div>
-      <!-- Painel password tela login -->
+      <!-- Painel password tela cadastro -->
       <div class="form-group">
         <label for="inputPassword">SENHA:</label>
         <input type="password" class="form-control" id="inputPassword" value="senha123">
       </div>
       <div class="form-group">
-        <button type="button" class="btn btn-light">ENTRAR</button>
-        <a href="{{'/cadastrar'}}"><button type="button" class="btn">CADASTRAR-SE</button><a>
+        <button type="button" class="btn btn-light">CADASTRAR</button>
+      </div>
+    </div>
   </body>
   </html>
 </section>
